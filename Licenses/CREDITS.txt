@@ -1,0 +1,64 @@
+SH2NR - credits and third-party notices
+=======================================
+
+SH2NR (sh2nr.addon32, sh2nr_feeder.exe, the installer and the documentation) is
+licensed GPL-3.0-or-later. The projects it depends on keep their own rights and
+licences, listed below. SH2NR is not affiliated with or endorsed by any of them,
+nor by NVIDIA, AMD, Konami or Team Silent.
+
+AMDNR by 3zwr1
+  https://github.com/3zwr1/AMD-NR---OptiScaler
+  The AMD neural rendering build SH2NR depends on: LmxxfNrRuntime.dll and
+  LmxxfNrRuntime.pak, the .pak format, the network passes and history, and the
+  host interface (LmxxfNrApi.h) that sh2nr_feeder.exe compiles against.
+  GPL-3.0 with AMDNR's additional terms under GPL-3.0 section 7(b): credit is
+  required wherever credits are shown. SH2NR credits AMDNR in its README, here,
+  and in its documentation. AMDNR's full notice ships with AMDNR itself as
+  AMDNR_NOTICE.txt; install it to read the complete terms.
+  SH2NR contains no AMDNR source code. It loads AMDNR's runtime through its
+  published C interface and ships none of AMDNR's binaries.
+
+lmxxf (Kien)
+  https://github.com/lmxxf/dlss5-on-amd-9070xt-porting
+  The DLSS 5 network port, the HIP kernels and the standalone runtime. MIT
+  licence; the full text is in lmxxf_LICENSE.txt in this folder. Portions of
+  LmxxfNrRuntime.cpp and LmxxfNrApi.h were contributed by TheAutomatic (MIT).
+
+danielblnc (Daniel Blanco)
+  https://github.com/danielblnc/DLSS-NR-on-AMD
+  The alternative closed-source runtime shipped in AMDNR's Runtime.zip. SH2NR
+  does not use or ship it; the attribution travels with AMDNR's package and is
+  reproduced here as danielblnc_ATTRIBUTION.txt for completeness.
+
+dgVoodoo2 by Dege
+  https://dege.freeweb.hu/dgVoodoo2/
+  Translates the game's DirectX 8 calls to Direct3D 11. Not redistributed by
+  SH2NR: the installer downloads it from the author's own site, as he asks.
+
+ReShade by crosire (Patrick Mours)
+  https://reshade.me
+  The add-on API sh2nr.addon32 is built against. BSD-3-Clause. Not
+  redistributed by SH2NR; its own installer is used.
+
+iMMERSE by Pascal Gilcher (Marty McFly)
+  https://github.com/martymcmodding/iMMERSE
+  Launchpad (the optical-flow motion vectors SH2NR feeds to the network) and
+  MXAO. Not redistributed by SH2NR; fetched from the author's repository.
+
+AMD FidelityFX / FSR
+  https://github.com/GPUOpen-LibrariesAndSDKs/FidelityFX-SDK
+  amd_fidelityfx_loader_dx12.dll and amd_fidelityfx_upscaler_dx12.dll, and the
+  ffx_api headers sh2nr_feeder.exe builds against. MIT. The binaries are copied
+  from the user's AMDNR install rather than shipped here; AMDNR's package
+  carries FidelityFX_v2_LICENSE.md.
+
+NVIDIA
+  DLSS, and the neural network's design and weights, belong to NVIDIA. No
+  NVIDIA file, library, licence or weight is included in or downloaded by
+  SH2NR. The runtime pack that contains NVIDIA-derived weights must be obtained
+  by the user from AMDNR.
+
+The idea
+  TheChadSurvivor - TCS K1-2 DLSS 5 (Knights of the Old Republic), which showed
+  that an old game could be given neural rendering through ReShade.
+  clshortfuse - RenoDX and its DLSS 5 add-on, the approach that work built on.

@@ -1,0 +1,9 @@
+* text=auto eol=crlf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.ini text eol=crlf
+*.md text eol=lf
+*.addon32 binary
+*.exe binary
+*.zip binary
+*.dll binary

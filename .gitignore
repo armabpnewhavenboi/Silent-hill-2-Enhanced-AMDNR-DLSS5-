@@ -1,0 +1,11 @@
+# logs and local test output
+*.log
+sh2nr-install.json
+
+# installer scratch
+tools/_work/
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
