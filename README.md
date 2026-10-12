@@ -16,6 +16,14 @@ logged frames.
 
 ---
 
+## Watch it running
+
+[![Silent Hill 2 (2001) with AMD neural rendering — click to watch on YouTube](docs/images/video-thumb.jpg)](https://youtu.be/u8WB6KPTKxs)
+
+GitHub can't embed a player, so the image above links out: **https://youtu.be/u8WB6KPTKxs**
+
+---
+
 ## Screenshots
 
 The same two spots with the network off and on, at 1440p with FSR 4 at native render scale.
