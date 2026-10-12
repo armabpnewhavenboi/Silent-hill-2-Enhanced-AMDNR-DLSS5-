@@ -16,6 +16,24 @@ logged frames.
 
 ---
 
+## Screenshots
+
+The same two spots with the network off and on, at 1440p with FSR 4 at native render scale.
+
+![James in the apartment bathroom, original on the left and neural rendering on the right](docs/images/comparison-bathroom.jpg)
+
+![A street in Silent Hill, original on the left and neural rendering on the right](docs/images/comparison-street.jpg)
+
+Look at the face and hair in the first pair, and the denim, jacket fabric and brick in the second. The
+network isn't adding geometry — the models are the same 2001 meshes — it's reconstructing material and
+lighting detail on surfaces that originally had almost none.
+
+Full-size frames: bathroom [before](docs/images/bathroom-before.jpg) ·
+[after](docs/images/bathroom-after.jpg) — street [before](docs/images/street-before.jpg) ·
+[after](docs/images/street-after.jpg)
+
+---
+
 ## How it works
 
 ```
